@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>achats.html</title>
+    <link rel="stylesheet" href="../style/achat.css">
+    </head>
+    <body>
+       <div style="padding: 15px;background-color:#adb860 ; position: fixed;top: 0;left: 0; z-index: 9999";>
+    <a href="../index.html" style="text-decoration: none; color:black; font-weight: bold;">
+        💎 Diamond Jewellery — Retour à l'accueil
+    </a>
+</div>
+      <div class="achat">
+ <form id="achat">
+  <input type="text" placeholder="Nom,Prenom"  class="tr" required>
+ <input type="number" placeholder="Numéro de téléphone" min="1" class="tr" required><br></br>
+<div class="select">
+  <p>Wilaya de livraison</p>
+ <div class="select-wilaya" onclick="toggleWilayaMenu()">
+    <input type="text" placeholder="Choisissez votre Wilaya" id="selected-wilaya"  required>
+    <span class="arrow">▼</span>
+  </div>
+  <ul id="wilaya-list" class="custom-options">
+    <li data-prix="700" onclick="selectWilaya('01 - Adrar', 700)">01 - Adrar <span>(700 DA)</span></li>
+    <li data-prix="500" onclick="selectWilaya('02 - Chlef', 500)">02 - Chlef <span>(500 DA)</span></li>
+    <li data-prix="600" onclick="selectWilaya('03 - Laghouat', 600)">03 - Laghouat <span>(600 DA)</span></li>
+    <li data-prix="500" onclick="selectWilaya('04 - Oum El Bouaghi', 500)">04 - Oum El Bouaghi <span>(500 DA)</span></li>
+    <li data-prix="450" onclick="selectWilaya('05 - Batna', 450)">05 - Batna <span>(450 DA)</span></li>
+    <li data-prix="400" onclick="selectWilaya('06 - Béjaïa', 400)">06 - Béjaïa <span>(400 DA)</span></li>
+    <li data-prix="500" onclick="selectWilaya('07 - Biskra', 500)">07 - Biskra <span>(500 DA)</span></li>
+    <li data-prix="600" onclick="selectWilaya('08 - Béchar', 600)">08 - Béchar <span>(600 DA)</span></li>
+    <li data-prix="350" onclick="selectWilaya('09 - Blida', 350)">09 - Blida <span>(350 DA)</span></li>
+    <li data-prix="350" onclick="selectWilaya('10 - Bouira', 350)">10 - Bouira <span>(350 DA)</span></li>
+    <li data-prix="600" onclick="selectWilaya('11 - Tamanrasset', 600)">11 - Tamanrasset <span>(600 DA)</span></li>
+    <li data-prix="500" onclick="selectWilaya('12 - Tébessa', 500)">12 - Tébessa <span>(500 DA)</span></li>
+    <li data-prix="500" onclick="selectWilaya('13 - Tlemcen', 500)">13 - Tlemcen <span>(500 DA)</span></li>
+    <li data-prix="450" onclick="selectWilaya('14 - Tiaret', 450)">14 - Tiaret <span>(450 DA)</span></li>
+    <li data-prix="350" onclick="selectWilaya('15 - Tizi Ouzou', 350)">15 - Tizi Ouzou <span>(350 DA)</span></li>
+    <li data-prix="300" onclick="selectWilaya('16 - Alger', 300)">16 - Alger <span>(300 DA)</span></li>
+    <li data-prix="500" onclick="selectWilaya('17 - Djelfa', 500)">17 - Djelfa <span>(500 DA)</span></li>
+    <li data-prix="400" onclick="selectWilaya('18 - Jijel', 400)">18 - Jijel <span>(400 DA)</span></li>
+    <li data-prix="400" onclick="selectWilaya('19 - Sétif', 400)">19 - Sétif <span>(400 DA)</span></li>
+    <li data-prix="500" onclick="selectWilaya('20 - Saïda', 500)">20 - Saïda <span>(500 DA)</span></li>
+    <li data-prix="400" onclick="selectWilaya('21 - Skikda', 400)">21 - Skikda <span>(400 DA)</span></li>
+    <li data-prix="450" onclick="selectWilaya('22 - Sidi Bel Abbès', 450)">22 - Sidi Bel Abbès <span>(450 DA)</span></li>
+    <li data-prix="400" onclick="selectWilaya('23 - Annaba', 400)">23 - Annaba <span>(400 DA)</span></li>
+    <li data-prix="400" onclick="selectWilaya('24 - Guelma', 400)">24 - Guelma <span>(400 DA)</span></li>
+    <li data-prix="400" onclick="selectWilaya('25 - Constantine', 400)">25 - Constantine <span>(400 DA)</span></li>
+    <li data-prix="400" onclick="selectWilaya('26 - Médéa', 400)">26 - Médéa <span>(400 DA)</span></li>
+    <li data-prix="400" onclick="selectWilaya('27 - Mostaganem', 400)">27 - Mostaganem <span>(400 DA)</span></li>
+    <li data-prix="450" onclick="selectWilaya('28 - M\'Sila', 450)">28 - M'Sila <span>(450 DA)</span></li>
+    <li data-prix="450" onclick="selectWilaya('29 - Mascara', 450)">29 - Mascara <span>(450 DA)</span></li>
+    <li data-prix="450" onclick="selectWilaya('30 - Ouargla', 450)">30 - Ouargla <span>(450 DA)</span></li>
+    <li data-prix="450" onclick="selectWilaya('31 - Oran', 450)">31 - Oran <span>(450 DA)</span></li>
+    <li data-prix="600" onclick="selectWilaya('32 - El Bayadh', 600)">32 - El Bayadh <span>(600 DA)</span></li>
+    <li data-prix="600" onclick="selectWilaya('33 - Illizi', 600)">33 - Illizi <span>(600 DA)</span></li>
+    <li data-prix="450" onclick="selectWilaya('34 - Bordj Bou Arréridj', 450)">34 - Bordj Bou Arréridj <span>(450 DA)</span></li>
+    <li data-prix="350" onclick="selectWilaya('35 - Boumerdès', 350)">35 - Boumerdès <span>(350 DA)</span></li>
+    <li data-prix="450" onclick="selectWilaya('36 - El Tarf', 450)">36 - El Tarf <span>(450 DA)</span></li>
+    <li data-prix="600" onclick="selectWilaya('37 - Tindouf', 600)">37 - Tindouf <span>(600 DA)</span></li>
+    <li data-prix="450" onclick="selectWilaya('38 - Tissemsilt', 450)">38 - Tissemsilt <span>(450 DA)</span></li>
+    <li data-prix="450" onclick="selectWilaya('39 - El Oued', 450)">39 - El Oued <span>(450 DA)</span></li>
+    <li data-prix="450" onclick="selectWilaya('40 - Khenchela', 450)">40 - Khenchela <span>(450 DA)</span></li>
+    <li data-prix="450" onclick="selectWilaya('41 - Souk Ahras', 450)">41 - Souk Ahras <span>(450 DA)</span></li>
+    <li data-prix="350" onclick="selectWilaya('42 - Tipaza', 350)">42 - Tipaza <span>(350 DA)</span></li>
+    <li data-prix="450" onclick="selectWilaya('43 - Mila', 450)">43 - Mila <span>(450 DA)</span></li>
+    <li data-prix="450" onclick="selectWilaya('44 - Aïn Defla', 450)">44 - Aïn Defla <span>(450 DA)</span></li>
+    <li data-prix="500" onclick="selectWilaya('45 - Naâma', 500)">45 - Naâma <span>(500 DA)</span></li>
+    <li data-prix="500" onclick="selectWilaya('46 - Aïn Témouchent', 500)">46 - Aïn Témouchent <span>(500 DA)</span></li>
+    <li data-prix="500" onclick="selectWilaya('47 - Ghardaïa', 500)">47 - Ghardaïa <span>(500 DA)</span></li>
+    <li data-prix="500" onclick="selectWilaya('48 - Relizane', 500)">48 - Relizane <span>(500 DA)</span></li>
+  </ul>
+  <input type="hidden" id="prix-livraison-input" value="0">
+</div>
+  <input type="text" placeholder=" La commune" class="tr" required>
+  <input type="text" placeholder="l'adresse" class="tr"><br></br>
+  <div>
+  <p>Type de livraison</p>
+  <input type="radio" name="livraison" required>Livraison à domicile<br></br>
+  <input type="radio" name="livraison" required>Livraison au Bureau<br></br>
+  </div>
+  <div>
+  <p>choisissez la couleur</p>
+  <select><option>Doré</option>
+    <option>Argenté</option></select>
+  </div>
+  <input type="number" id="quantité-produit" placeholder="quantité" min="1" max="10" class="tr" required>
+  <input type="text" placeholder="commentaire ou information supplémentaire" class="tr"><br></br>
+  <input type="hidden" id="prix-produit-input" value="0">
+  <div class="recap-prix" style="margin: 20px 0; padding: 15px; background-color: #fcfaf2; border: 1px solid #dfd7ca; border-radius: 5px;">
+    <p>Prix du produit : <span id="afficher-prix-produit">0</span> DA</p>
+    <p>Frais de livraison : <span id="afficher-prix-livraison">0</span> DA</p>
+    <hr style="border-top: 1px dashed #dfd7ca;">
+    <h3 style="color: #bfa15f;">Total à payer : <span id="prix-total">0</span> DA</h3>
+  </div>
+<button type="submit" onclick="validerCommande()">confirmer cette commande</button>
+</form>
+</div>
+<script src="../javascript/menu.js"></script>
+<script src="../javascript/achat.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+#liste-articles-panier {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+.article-panier {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    padding: 15px 0;
+    border-bottom : 1px solid #eee; 
+}
+
+.image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #c5a880; 
+}
+
+.details-panier {
+    flex: 1;
+    text-align: left;
+    padding: 0 15px;
+}
+
+.details-panier h4 {
+    margin: 0 0 5px 0;
+    font-size: 15px;
+    color:black;
+}
+
+.details-panier .prix-article {
+    color: #c5a880; 
+    font-weight: bold;
+    font-size: 14px;
+}
+.bouton-supprimer {
+    background: none;
+    border: none;
+    color: #ff4d4d;
+    font-size: 18px;
+    cursor: pointer;
+    width: auto; 
+    padding: 5px;
+    margin: 0;
+}
+
+.bouton-supprimer:hover {
+    background: none; 
+    color: brown; 
+}
+
+.resume-panier {
+    width: 100%;
+    max-width: 400px;
+    margin: 30px auto 0 auto;
+    padding-top: 20px;
+    border-top: 2px dashed #c5a880;
+}
+
+.resume-panier p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#total-articles {
+    color:black;
+    font-family: sans-serif;
+}
+
+.resume-panier a {
+    text-decoration: none;
+    display: block;
+}
+@media screen and (max-width:1024px) {
+    html, body {
+        zoom: 75%; 
+        transform: scale(0.90); 
+        transform-origin: top center;
+        width: 100%;
+        overflow-x: hidden; 
+    }
+}

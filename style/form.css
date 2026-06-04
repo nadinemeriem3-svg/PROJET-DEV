@@ -1,0 +1,43 @@
+body{
+    color: black;
+    background-color:#adb860 ;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.1;
+}
+.tr{
+    width: 400px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 25px;
+}
+button{
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px;
+    width: 300px;
+}
+button:hover {
+background-color: brown;
+}
+a{
+    font-size: 17px;
+}
+div{
+    background-color: white;
+    padding:30px;
+    border-radius: 25px;
+    position: fixed;
+    top:50px;
+    left:420px;
+    width:fit-content;
+}
+@media screen and (max-width:1024px) {
+    html, body {
+        zoom: 75%; 
+        transform: scale(0.90); 
+        transform-origin: top center;
+        width: 100%;
+        overflow-x: hidden; 
+    }
+}

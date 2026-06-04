@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="../style/produit.css">
+<title>produit.html</title>
+</head>
+<body>
+    <div style="padding: 15px;background-color:#064b06;top: 0;left: 0; z-index: 9999";>
+    <a href="../index.html" style="text-decoration: none; color:white; font-weight: bold;">
+        💎 Diamond Jewellery — Retour à l'accueil
+    </a>
+</div>
+    <nav class="nav">
+    <div class="cat">
+        <div class="categorie" onclick="toggleMenu()">
+           <span></span>
+           <span></span>
+           <span></span>
+        </div>
+  <ul id="dropdown-menu" class="dropdown-categories">
+    <li><a href="#" class="lien-filtre" data-categorie="tous" onclick="filtrerCategorie('tous')">Tous les produits</a></li>
+    <li><a href="#" class="lien-filtre" data-categorie="bagues" onclick="filtrerCategorie('bagues')">Bagues</a></li>
+    <li><a href="#" class="lien-filtre" data-categorie="colliers" onclick="filtrerCategorie('colliers')">Colliers</a></li>
+    <li><a href="#" class="lien-filtre" data-categorie="bracelets" onclick="filtrerCategorie('bracelets')">Bracelets</a></li>                 
+    <li><a href="#" class="lien-filtre" data-categorie="boucles" onclick="filtrerCategorie('boucles')">Boucles d'oreilles</a></li>
+    <li><a href="#" class="lien-filtre" data-categorie="parures" onclick="filtrerCategorie('parures')">parures</a></li>
+  </ul>
+    </div>
+        <div class="search-bar">
+    <input type="text"  id="barreRecherche" placeholder="Rechercher un bijou" class="search">
+    <input type="button" id="barreRecherche" value="🔎" class="bar">
+        </div>
+    <div class="panier">
+            <a href="panier.html" id="icon">🛒</a>
+        </div>
+        <div class="langue">
+        <select>
+            <option value="fr">Français</option>
+        </select>
+        </div>
+    </nav>
+    </div><br></br>
+<div class="produits">
+    <div class="produit"  data-categorie="bracelets">
+   <a href="../images/112.jpg" ><img src="../images/112.jpg" class="image" alt="Bracelets"></a>
+   <div class="produit-info">
+   <h4>Bracelets</h4>
+    <p>Bracelet tendance en acier inoxydable.</p>
+    <div class="dp">
+  <span class="prix">1200 DA</span>
+    <span class="Disponible">Disponible</span>
+    </div>
+  <div class="butt">
+   <a href="achats.html?prix=1200" class="btn-acheter"><button>Acheter </button></a>
+   <button class="but" onclick="panier('Bracelets',1200,'../images/112.jpg')">Panier 🛒</button>
+  </div>
+   </div>
+    </div>
+   <div class="produit" data-categorie="colliers">
+<a href="../images/114.jpg"><img src="../images/114.jpg" class="image" alt="Collier simple"></a>
+<div class="produit-info">
+    <h4>Collier simple</h4>
+    <p>en acier inoxydable, fin et élégant.</p>
+    <div class="dp">
+    <span class="prix">1000 DA</span>
+    <span class="Disponible">Disponible</span>
+    </div>
+    <div class="butt">
+    <a href="achats.html?prix=1000" class="btn-acheter"><button>Acheter </button></a>
+    <button class="but" onclick="panier('Collier simple',1000,'../images/114.jpg')">Panier 🛒</button>
+    </div>
+</div>
+   </div>
+<div class="produit" data-categorie="bagues">
+   <a href="../images/117.jpg" ><img src="../images/117.jpg" class="image" alt="Pack de bagues"></a>
+   <div class="produit-info">
+    <h4>Pack de bagues</h4>
+    <p> Pack de bagues en acier inoxydable.</p>
+    <div class="dp">
+    <span class="prix">1500 DA</span>
+    <span class="Disponible">Disponible</span>
+    </div>
+    <div class="butt">
+    <a href="achats.html?prix=1500" class="btn-acheter"><button>Acheter </button></a>
+    <button class="but" onclick="panier('Pack de bagues',1500,'../images/117.jpg')">Panier 🛒</button>
+    </div>
+   </div>
+</div>
+<div class="produit" data-categorie="boucles">
+ <a href="../images/119.jpg"><img src="../images/119.jpg" class="image" alt="Boucles d'oreilles fleurs"></a>
+ <div class="produit-info">
+    <h4>Boucles d'oreilles fleurs</h4>
+    <p>Boucles d'oreilles en forme de fleurs en acier inoxydable.</p>
+    <div class="dp">
+    <span class="prix">900 DA</span>
+    <span class="Disponible">Disponible</span>
+    </div>
+    <div class="butt">
+    <a href="achats.html?prix=900" class="btn-acheter"><button>Acheter </button></a>
+   <button class="but" onclick="panier('Boucles d oreilles fleurs',900,'../images/119.jpg')">Panier 🛒</button>
+    </div>
+ </div>
+</div>
+<div class="produit" data-categorie=" parures" >
+   <a href="../images/142.jpg"><img src="../images/142.jpg" class="image" alt="Ensemble collier +boucles"></a>
+   <div class="produit-info">
+    <h4>Ensemble collier +boucles</h4>
+    <p>collier et boucles assortis en acier inoxydable.</p>
+    <div class="dp">
+    <span class="prix">2000 DA</span>
+    <span class="Disponible">Disponible</span>
+    </div>
+    <div class="butt">
+    <a href="achats.html?prix=2000" class="btn-acheter"><button>Acheter </button></a>
+    <button class="but" onclick="panier('Ensemble collier +boucles',2000,'../images/142.jpg')">Panier 🛒</button>
+    </div>
+   </div>
+</div>
+<div class="produit" data-categorie="parures" >
+    <a href="../images/125.jpg"><img src="../images/125.jpg" class="image" alt="Ensemble collier + bracelet"></a>
+    <div class="produit-info">
+    <h4>Ensemble collier + bracelet </h4>
+    <p>Parure collier et bracelet en acier inoxydable.</p>
+    <div class="dp">
+    <span class="prix">1500 DA</span>
+    <span class="Disponible">Disponible</span>
+    </div>
+    <div class="butt">
+    <a href="achats.html?prix=1500" class="btn-acheter"><button>Acheter </button></a>
+    <button  class="but" onclick="panier('Ensemble collier + bracelet ',1500,'../images/125.jpg')">Panier 🛒</button>
+    </div>
+    </div>
+</div>
+<div class="produit" data-categorie="colliers">
+    <a href="../images/122.jpg"><img src="../images/122.jpg" class="image" alt="Collier"></a>
+    <div class="produit-info">
+    <h4>Collier</h4>
+    <p> Collier élégant en acier inoxydable.</p>
+    <div class="dp">
+    <span class="prix">1200 DA</span>
+    <span class="Disponible">Disponible</span>
+    </div>
+    <div class="butt">
+    <a href="achats.html?prix=1200" class="btn-acheter"><button>Acheter </button></a>
+    <button  class="but" onclick="panier('Collier',1200,'../images/122.jpg')">Panier🛒 </button>
+    </div>
+    </div>
+</div>
+<div class="produit" data-categorie="bracelets">
+    <div class="produit-info">
+    <a href="../images/118.jpg"><img src="../images/118.jpg" class="image" alt="Bracelet bleu (style Van Cleef)"></a>
+    <h4>Bracelet bleu (style Van Cleef)</h4>
+    <p>Bracelet en acier inoxydable avec motif bleu.</p>
+    <div class="dp">
+    <span class="prix">1500 DA</span>
+    <span class="Disponible">Disponible</span>
+    </div>
+    <div class="butt">
+    <a href="achats.html?prix=1500" class="btn-acheter"><button>Acheter </button></a>
+    <button class="but" onclick="panier('Bracelet bleu (style Van Cleef)',1500,'../images/118.jpg')">Panier 🛒</button>
+    </div>
+    </div>
+</div>
+<div class="produit" data-categorie="bracelets">
+    <a href="../images/133.webp"><img src="../images/133.webp" class="image" alt="Bracelet cerises"></a>
+    <div class="produit-info">
+    <h4>Bracelet cerises</h4>
+    <p> Bracelet fin avec motifs cerises en acier inoxydable.</p>
+    <div class="dp">
+    <span class="prix">1500 DA</span>
+    <span class="Disponible">Disponible</span>
+    </div>
+    <div class="butt">
+        <a href="achats.html?prix=1500" class="btn-acheter"><button>Acheter </button></a>
+    <button class="but" onclick="panier('Bracelet cerises',1500,'../images/133.webp')">Panier 🛒</button>
+    </div>
+    </div>
+</div>
+<div class="produit" data-categorie="bracelets">
+    <a href="../images/116.webp"><img src="../images/116.webp" class="image" alt="Bracelet simple"></a>
+    <div class="produit-info">
+    <h4>Bracelet simple</h4>
+    <p>Bracelet en acier inoxydable, simple et élégant.</p>
+    <div class="dp">
+    <span class="prix">2000 DA</span>
+    <span class="Disponible">Disponible</span>
+    </div>
+    <div class="butt">
+       <a href="achats.html?prix=2000" class="btn-acheter"><button>Acheter </button></a> 
+    <button class="but" onclick="panier('Bracelet simple',2000,'../images/116.webp')">Panier 🛒</button>
+    </div>
+    </div>
+</div>
+<div class="produit" data-categorie="colliers">
+    <a href="../images/127.jpg"><img src="../images/127.jpg" class="image" alt="Collier fleur"></a>
+    <div class="produit-info">
+    <h4>Collier fleur</h4>
+    <p> Collier avec pendentif fleur en acier inoxydable.</p>
+    <div class="dp">
+    <span class="prix">1400 DA</span>
+    <span class="Disponible">Disponible</span>
+    </div>
+    <div class="butt">
+    <a href="achats.html?prix=1400" class="btn-acheter"><button>Acheter </button></a>
+    <button class="but" onclick="panier('Collier fleur',1400,'../images/127.jpg')">Panier 🛒 </button>
+    </div>
+    </div>
+</div>
+<div class="produit" data-categorie="bracelets">
+    <a href="../images/115.jpg"><img src="../images/115.jpg" class="image" alt="Bracelet simple" ></a>
+    <div class="produit-info">
+    <h4>Bracelet simple</h4>
+    <p> Bracelet en acier inoxydable.</br></p>
+    <div class="dp">
+    <span class="prix">1500 DA</span>
+    <span class="Disponible">Disponible</span>
+    </div>
+    <div class="butt">
+    <a href="achats.html?prix=1500" class="btn-acheter"><button>Acheter </button></a>
+    <button class="but" onclick="panier('Bracelet simple',1500,'../images/115.jpg')">Panier 🛒 </button>
+    </div>
+    </div>
+</div>
+<div class="produit" data-categorie="bagues" >
+    <a href="../images/128.webp"><img src="../images/128.webp" class="image" alt="Trio de bagues"></a>
+    <div class="produit-info">
+    <h4>Trio de bagues</h4>
+    <p>Lot de trois bagues en acier inoxydable.</p>
+    <div class="dp">
+    <span class="prix">1200 DA</span>
+    <span class="Disponible">Disponible</span>
+    </div>
+    <div class="butt">
+    <a href="achats.html?prix=1200" class="btn-acheter"><button>Acheter </button></a>
+    <button class="but" onclick="panier('Trio de bagues',1200,'../images/128.webp')">Panier 🛒</button>
+    </div>
+    </div>
+</div>
+<div class="produit" data-categorie="bagues">
+    <a href="../images/129.jpg"><img src="../images/129.jpg" class="image" alt="Pack de bagues"></a>
+    <div class="produit-info">
+    <h4>Pack de bagues</h4>
+    <p> Pack de bagues en acier inoxydable.</p>
+    <div class="dp">
+    <span class="prix">900 DA</span>
+    <span class="Disponible">InDisponible</span>
+    </div>
+    <div class="butt">
+    <a href="achats.html?prix=900" class="btn-acheter"><button>Acheter </button></a>
+   <button class="but" onclick="panier('Pack de bagues',900,'../images/129.jpg')">Panier 🛒</button>
+    </div>
+    </div>
+</div>
+<div class="produit" data-categorie="bagues">
+    <a href="../images/124.jpeg"><img src="../images/124.jpeg" class="image" alt="Bagues individuelles"></a>
+    <div class="produit-info">
+    <h4>Bagues individuelles</h4>
+    <p>Bague en acier inoxydable.</p>
+    <div class="dp">
+    <span class="prix">900 DA</span>
+    <span class="Disponible">Disponible</span>
+    </div>
+    <div class="butt">
+    <a href="achats.html?prix=900" class="btn-acheter"><button>Acheter </button></a>
+    <button class="but" onclick="panier('Bagues individuelles',900,'../images/124.jpeg')">Panier 🛒</button>
+    </div>
+    </div>
+</div>
+<div class="produit" data-categorie="boucles">
+    <a href="../images/138.webp"><img src="../images/138.webp" class="image" alt="Boucles d'oreilles nœud"></a>
+    <div class="produit-info">
+    <h4>Boucles d'oreilles nœud</h4>
+    <p> Boucles d'oreilles en forme de nœud en acier inoxydable.</p>
+    <div class="dp">
+    <span class="prix">900 DA</span>
+    <span class="Disponible">Disponible</span>
+    </div>
+    <div class="butt">
+    <a href="achats.html?prix=900" class="btn-acheter"><button>Acheter </button></a>
+    <button class="but" onclick="panier('Boucles d oreilles nœud',900,'../images/138.webp')">Panier 🛒</button>
+    </div>
+    </div>
+</div>
+<div class="produit" data-categorie="colliers">
+    <a href="../images/170.jpg"><img src="../images/170.jpg" class="image" alt="Collier"></a>
+    <div class="produit-info">
+    <h4>Collier</h4>
+    <p>Collier trois en un en acier inoxydable</p>
+    <div class="dp">
+    <span class="prix">1000 DA</span>
+    <span class="Disponible">Disponible</span>
+    </div>
+    <div class="butt">
+    <a href="achats.html?prix=1000" class="btn-acheter"><button>Acheter</button></a>
+    <button class="but" onclick="panier('Collier',1000,'../images/170.jpg')">Panier 🛒</button>
+    </div>
+    </div>
+</div>
+<div class="produit" data-categorie="bracelets">
+    <a href="../images/171.jpg"><img src="../images/171.jpg" class="image" alt="Montre Signature Dorée"></a>
+    <div class="produit-info">
+    <h4>Montre Signature Dorée</h4>
+    <p>Montre au bracelets Dorée,en acier inoxydable</p>
+    <div class="dp">
+    <span class="prix">1200 DA</span>
+    <span class="Disponible">Disponible</span>
+    </div>
+    <div class="butt">
+    <a href="achats.html?prix=1200" class="btn-acheter"><button>Acheter</button></a>
+    <button class="but" onclick="panier('Montre Signature Dorée',1200,'../images/171.jpg')">Panier 🛒</button>
+    </div>
+    </div>
+</div>
+<div class="produit" data-categorie=" parures " >
+    <a href="../images/172.jpg"><img src="../images/172.jpg" class="image" alt="Parure bracelet,collier,boucles d'oreilles"></a>
+    <div class="produit-info">
+    <h4>Parure bracelet,collier,boucles d'oreilles</h4>
+    <p> Collier, bracelet et boucles d'oreilles en acier inoxydable</p>
+    <div class="dp">
+    <span class="prix">3500 DA</span>
+    <span class="Disponible">Disponible</span>
+    </div>
+    <div class="butt">
+    <a href="achats.html?prix=3500" class="btn-acheter"><button>Acheter</button></a>
+    <button class="but" onclick="panier('Parure bracelet,collier,boucles d oreilles',3500,'../images/172.jpg')">Panier 🛒</button>
+    </div>
+    </div>
+</div>
+</div>
+<script src="../javascript/categorie.js"></script>
+<script src="../javascript/panier.js"></script>
+<script src="../javascript/menu.js"></script>
+<script src="../javascript/recherche.js"></script>
+<script src="../javascript/achat.js"></script>
+</body>
+</html>

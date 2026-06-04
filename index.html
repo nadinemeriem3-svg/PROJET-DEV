@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>index.html</title>
+        <link rel="stylesheet" href="style/index.css">
+    </head>
+    <body >
+        <nav class="lien">
+        <div >
+         <h1 class="t-acceuil"> Diamond jewellery</h1>  
+        </div>
+        <div>
+       <a href="index.html"><button>acceuil</button></a>
+             <a href="content/produit.html"><button> collection</button></a>  
+            <a href="content/contact.html"><button>contact</button></a>
+            <a href="content/apropos.html"><button>A propos</button></a>
+        </div> 
+            <div>
+                <a href="content/panier.html" class="icon">🛒</a>
+                <a href="content/connexion.html" class="icon">👤</a>
+            </div>
+        </nav>
+        <section>
+            <section class="acceuil">
+                <div>
+                    <img src="images/173.jpg" class="br" alt="image-aceuill">
+                </div>
+                <div class="TEXT">
+                <h4> Diamond jewellery</h4>
+             <p><em>découvrez notre collection de bijoux raffinés</em><br></br><em>créations élégantes et intemporelles.</em></p>
+            </div>
+            </section>
+            <section class="info">
+                <div>
+                    <img src="images/163.webp" class="bt" alt="image-aprops">
+                </div>
+                <div>
+                <h1 ><em>À propos de nous</em></h1>
+                <p>Né d'une passion pour l'artisanat et l'éclat des matières,<b>Diamond jewellery</b> crée des bijoux pensés pour sublimer votre quotidien.</p>
+                <p>Chaque pièce est imaginée comme une promesse : celle d'allier finesse, caractère et intemporalité. Plus qu'un accessoire, un reflet de votre propre lumière.</p>
+            </div>
+            </section>
+            <section class="collection">
+                <h4>Nouveauté</h4>
+                <div class="nv">
+                <div class="produit">
+                <img src="images/172.jpg" class="image" alt="parure bracelet ,collier, boucles d'oreilles"><br></br>
+               <p class="prix">1400DA<a  class="icon" onclick="panier('Parure bracelet,collier,boucles d oreilles',1400,'../images/172.jpg')">🛒</a></p>
+                 </div>
+                 <div class="produit">
+                <img src="images/171.jpg" class="image" alt="Montre Signature Dorée">
+                <p class="prix">1200DA<a  class="icon" onclick="panier('Montre Signature Dorée',1200,'../images/171.jpg')">🛒</a></p>
+                 </div>
+                 <div class="produit">
+                <img src="images/170.jpg" class="image" alt="Collier">
+                <p class="prix">1000DA<a  class="icon" onclick="panier('Collier',1000,'../images/170.jpg')">🛒</a></p>
+                 </div>
+                 <div class="produit">
+                <img src="images/117.jpg" class="image" alt="Pack de bagues">
+               <p class="prix">1500DA<a  class="icon" onclick="panier('Pack de bagues',1500,'../images/117.jpg')">🛒</a><p> 
+                 </div>
+                </div>
+            </section>
+            <section class="form">
+                <p class="t"><b>Inscrivez-vous pour découvrir toutes nos collections</b></p>
+                <div class="conteneur">
+                 <div class="arr">
+                    <img src="images/174.jpg" class="ar" alt="image-inscription">
+                </div>
+             <div class="formulaire">
+                <form id="formulaire-inscription">
+                <input type="text" placeholder="Nom" class="tr" required ><br></br>
+    <input type="text" placeholder="prénom"  class="tr" required><br></br>
+    <input type="text" placeholder="e-mail" class="tr" required id="email-"><br></br>
+    <input type="password" placeholder="mot de passe" class="tr" required><br></br>
+    <input type="password" placeholder="confirmer votre mot de passe" class="tr" required><br></br>
+     <p id="erreur-inscription" style="font-weight: bold; margin-top: 10px;"></p>
+    <button type="submit">S'inscrire</button><br></br>
+                </form>
+             </div>
+            </div>
+            </section>
+            <section class="cont">
+                <p class="tc">Contactez-nous</p>
+                <div class="contenu">
+            <div class="contact">
+                <p class="tex">Diamond jewellery</p>
+                <span>📞+2134567890</span>
+                <span>📸Instagram:diamond_jewellery26</span>
+                <span>👍Facebook:diamond_jewellery</span>
+            </div>
+            <div class="li">
+               <a href="content/apropos.html"><p>à propos</p></a>
+               <a href="index.html"><p>acceuil</p></a>
+               <a href="content/produit.html"><p>collection</p></a>
+            </div>
+        </div>
+            </section>
+        </section>
+        <script src="javascript/panier.js"></script>
+        <script src="javascript/form.js"></script>
+    </body>
+</html>

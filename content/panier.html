@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>panier.html</title>
+    <link rel="stylesheet" href="../style/panier.css">
+    </head>
+<body>
+    <div style="padding: 15px;background-color: white; position: fixed;top: 0;left: 0; z-index: 9999";>
+    <a href="../index.html" style="text-decoration: none; color:black; font-weight: bold;">
+        💎 Diamond Jewellery — Retour à l'accueil
+    </a>
+</div>
+<div class="panier">
+    <h2>Votre Panier</h2>
+    <div id="liste-articles-panier">
+        </div>
+    <div class="resume-panier">
+        <p>Total articles : <span id="total-articles">0 DA</span></p> 
+            <button type="button" onclick="redirigerVersAchat()" id="bouton-valider-panier">Passer à la commande</button>
+    </div>
+</div>
+<script src="../javascript/panier.js"></script>
+<script src="../javascript/form.js"></script>
+</body>
