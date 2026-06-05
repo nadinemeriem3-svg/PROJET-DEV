@@ -29,7 +29,12 @@ div{
     border-radius: 25px;
     position: relative;
     top:50px;
-    left:200px;
+    margin: 50px auto;
+    width: 90%;
+    max-width: 500px;     
+    height: auto; 
+    display: flow-root;
+    min-height: 450px;
     width:fit-content;
 }
 @media screen and (max-width:1024px) {
