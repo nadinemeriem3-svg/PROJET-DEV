@@ -164,8 +164,7 @@ text-decoration: none;
  @media (max-width: 768px){
 @media screen and (max-width:1024px) {
     html, body {
-        zoom: 67%; 
-        transform: scale(0.90); 
+        zoom: 75%; 
         transform-origin: top center;
         width: 100%;
         overflow-x: hidden; 
