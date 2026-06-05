@@ -71,7 +71,7 @@ background-color: brown;
 @media (max-width: 768px){
 @media screen and (max-width:1024px) {
     html, body {
-        zoom: 67%; 
+        zoom: 65%; 
         transform-origin: top center;
         width: 100%;
         overflow-x: hidden; 
