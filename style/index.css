@@ -223,7 +223,7 @@ display: block;
     color: rgb(121, 29, 29);
 }
 @media screen and (max-width: 1024px) {
-    .acceuil {
+    body {
         zoom: 100% !important; 
         transform: scale(1) !important; 
         width: 100% !important; 
