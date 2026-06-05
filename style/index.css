@@ -3,7 +3,6 @@ html, body {
     margin: 0;
 }
 body{
-    min-width: 1000px;
     height: 100%;
     width: 100%;
     display: flex;
@@ -223,12 +222,15 @@ display: block;
 .li a:hover {
     color: rgb(121, 29, 29);
 }
-@media screen and (max-width:1024px) {
+@media (max-width: 768px) {
+
+    @media screen and (max-width:1024px) {
     html, body {
-        zoom: 75%; 
+        zoom: 66%; 
         transform: scale(0.90); 
         transform-origin: top center;
         width: 100%;
         overflow-x: hidden; 
     }
+}
 }

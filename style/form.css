@@ -27,17 +27,19 @@ div{
     background-color: white;
     padding:30px;
     border-radius: 25px;
-    position: fixed;
+    position: relative;
     top:50px;
     left:420px;
     width:fit-content;
 }
+@media (max-width: 768px){
 @media screen and (max-width:1024px) {
     html, body {
-        zoom: 75%; 
+        zoom: 69%; 
         transform: scale(0.90); 
         transform-origin: top center;
         width: 100%;
         overflow-x: hidden; 
     }
+}
 }

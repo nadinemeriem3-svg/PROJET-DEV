@@ -68,12 +68,14 @@ background-color: brown;
     padding: 15px;
     background-color: white;
 }
+@media (max-width: 768px){
 @media screen and (max-width:1024px) {
     html, body {
-        zoom: 75%; 
+        zoom: 67%; 
         transform: scale(0.90); 
         transform-origin: top center;
         width: 100%;
         overflow-x: hidden; 
     }
+}
 }

@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
 #liste-articles-panier {
     width: 100%;
     max-width: 400px;
@@ -78,6 +82,7 @@
     text-decoration: none;
     display: block;
 }
+@media (max-width: 768px){
 @media screen and (max-width:1024px) {
     html, body {
         zoom: 75%; 
@@ -86,4 +91,5 @@
         width: 100%;
         overflow-x: hidden; 
     }
+}
 }

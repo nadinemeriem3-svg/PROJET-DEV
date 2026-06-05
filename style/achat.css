@@ -119,7 +119,8 @@ select-wilaya:hover {
 .custom-options.actif{
    display: block !important;
 }
-@media screen and (max-width:1024px) {
+@media (max-width: 768px){
+@media (max-width:480px){
     html, body {
         zoom: 75%; 
         transform: scale(0.90); 
@@ -127,4 +128,5 @@ select-wilaya:hover {
         width: 100%;
         overflow-x: hidden; 
     }
+}
 }
