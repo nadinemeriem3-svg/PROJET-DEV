@@ -35,8 +35,7 @@ body{
 @media (max-width: 768px){
 @media screen and (max-width:1024px) {
     html, body {
-        zoom: 66%; 
-        transform: scale(0.90); 
+        zoom: 66%;  
         transform-origin: top center;
         width: 100%;
         overflow-x: hidden; 

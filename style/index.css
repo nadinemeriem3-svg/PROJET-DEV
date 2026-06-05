@@ -224,7 +224,7 @@ display: block;
 }
 @media screen and (max-width: 1024px) {
     html, body {
-        zoom: 62%;
+        zoom: 59%;
         transform-origin: top center;
         width: 100%;
         overflow-x: hidden; 
