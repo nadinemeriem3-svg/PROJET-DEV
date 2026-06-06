@@ -41,6 +41,13 @@ function calcularTotal() {
     if (txtTotal) txtTotal.textContent = totalGlobal;
 }
 function validerCommande(){
+    const utilisateurConnecte = sessionStorage.getItem('estConnecte'); 
+
+    if (!utilisateurConnecte) {
+        alert("⚠️ Vous devez être connecté pour valider votre commande !");
+        window.location.href = "connexion.html"; 
+        return;
+    }
      const formulaire = document.querySelector('form');
 
     if (formulaire) {
